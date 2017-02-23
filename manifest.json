@@ -1,0 +1,51 @@
+{
+	"id": ,
+	"manifest_version": 2,
+	"name": "Quora Spreadsheet",
+	"version": "1.0",
+	
+	"description": "Lets you organize a feed of Quora topics sorted by followers or likes.",
+	
+	"applications": {
+	  "gecko": {
+		"id": "addon@example.com",
+		"strict_min_version": "42.0"
+	  }
+	}
+	
+	"icons": {
+		["icons/qss-64.png"]
+	},
+	
+	"permissions": [
+		"activeTab",
+		"storage"
+	],
+	
+	"page_action": {
+	  "browser_style": true,
+	  "default_icon": {
+		"16:": "icons/qss-16.png",
+		"19:": "icons/qss-19.png",
+		"32:": "icons/qss-32.png",
+		"38:": "icons/qss-38.png",
+		"64:": "icons/qss-64.png"
+	  },
+	  "default_title": "Quora Spreadsheet",
+	  "default_popup": "popup/datasheet.html"
+	},
+	
+	"content_scripts": [
+		{
+		}
+	],
+	
+	"background_scripts": [
+		{
+		}
+	],
+	
+	"options_ui": {
+		"page": "options.html"
+	}
+}

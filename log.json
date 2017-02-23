@@ -1,0 +1,70 @@
+{
+    "count": 6,
+    "summary": {
+        "errors": 4,
+        "notices": 0,
+        "warnings": 2
+    },
+    "metadata": {
+        "id": null,
+        "manifestVersion": 1,
+        "name": "Quora Spreadsheet",
+        "type": 1,
+        "version": "1.0",
+        "emptyFiles": [
+            "log.json"
+        ],
+        "jsLibs": {}
+    },
+    "errors": [
+        {
+            "_type": "error",
+            "code": "JSON_INVALID",
+            "message": "\"/icons/64:\" is not a valid key or has invalid extra properties",
+            "description": "Your JSON file could not be parsed."
+        },
+        {
+            "_type": "error",
+            "code": "JSON_INVALID",
+            "message": "\"/manifest_version\" should be >= 2",
+            "description": "Your JSON file could not be parsed."
+        },
+        {
+            "_type": "error",
+            "code": "JSON_INVALID",
+            "message": "Your JSON is not valid.",
+            "description": "Unexpected end of JSON input",
+            "file": "log.json"
+        },
+        {
+            "_type": "error",
+            "code": "JS_SYNTAX_ERROR",
+            "message": "JavaScript syntax error",
+            "description": "There is a JavaScript syntax error in your code; validation cannot continue on this file.",
+            "column": 14,
+            "file": "popup\\background-script.js",
+            "line": 1
+        }
+    ],
+    "notices": [],
+    "warnings": [
+        {
+            "_type": "warning",
+            "code": "STORAGE_LOCAL",
+            "message": "\"storage.local\" can cause issues when loaded temporarily",
+            "description": "This API can cause issues when loaded temporarily using about:debugging in Firefox unless you specify applications > gecko > id in the manifest. Please see: https://mzl.la/2hizK4a for more.",
+            "column": 3,
+            "file": "options\\options.js",
+            "line": 13
+        },
+        {
+            "_type": "warning",
+            "code": "STORAGE_LOCAL",
+            "message": "\"storage.local\" can cause issues when loaded temporarily",
+            "description": "This API can cause issues when loaded temporarily using about:debugging in Firefox unless you specify applications > gecko > id in the manifest. Please see: https://mzl.la/2hizK4a for more.",
+            "column": 17,
+            "file": "options\\options.js",
+            "line": 28
+        }
+    ]
+}
